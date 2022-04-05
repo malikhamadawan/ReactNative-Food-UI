@@ -96,7 +96,7 @@ style={{
 }}
 >
 <ScrollView
-horizontal={true}
+horizontal={false}
 >
     <Image
     source={require('../../assets/images.png')}
