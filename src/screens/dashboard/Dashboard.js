@@ -84,7 +84,7 @@ style={{
     elevation: 5,
 }}
 >
-<Icons name="search-outline" color='black' size={24} >
+<Icons name="search-outline" color='white' size={24} >
   </Icons>
 </View>
 </View>
