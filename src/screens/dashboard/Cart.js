@@ -15,31 +15,27 @@ const Cart =({navigation})=>{
  setText(!text)
      }
     return(
-        <View
-        style={{
-            flex: 1,
-            backgroundColor: 'white',
-        }}
+        <View style={styles.mainConatiner}
         >
             <View
             style={{
                 height: h('45'),
-                width : '100%',
-                // backgroundColor :'red',
+                width : w('100'),
+                backgroundColor :'red',
             }}
             >
 <ImageBackground
 source={require('../../assets/image4.jpg')}
 style={{
-    height : 375,
-    width : '100%',
+    height : h('55'),
+    width : w('100'),
 }}
 >
 <View
 style={{
-    height : '30%',
-    width: '100%',
-    // backgroundColor: 'red',
+    height : h('10'),
+    width:w('100'),
+    // backgroundColor: 'green',
     flexDirection :'row',
 }}
 >
@@ -49,9 +45,9 @@ onPress={()=>{
     navigation.navigate('MyTabs')
 }}
 style={{
-    height : '100%',
-    width : '20%',
-    // backgroundColor: 'green',
+    height : h('10'),
+    width : w('20'),
+    // backgroundColor: 'blue',
     alignItems: 'center',
     justifyContent :'center',
 }}
@@ -62,8 +58,8 @@ style={{
     {/* Spacer */}
     <View
     style={{
-        height: '100%',
-        width: '60%',
+        height: h('10'),
+        width: w('60'),
         // backgroundColor: 'orange',
     }}
     />
@@ -71,8 +67,8 @@ style={{
     {/* View two */}
 <TouchableOpacity
 style={{
-    height : '100%',
-    width : '20%',
+    height : h('10'),
+    width : w('20'),
     // backgroundColor: 'green',
     alignItems: 'center',
     justifyContent :'center',
@@ -85,23 +81,20 @@ style={{
             </View>
             <View
             style={{
-                height: 315,
-                width: '100%',
+                height: h('40'),
+                width: w('100'),
                 backgroundColor: 'white',
                 borderTopLeftRadius: 25,
                 borderTopRightRadius: 25,
-                // elevation: 5,
+
 
             }}
             >
         <View
         style={{
-            height: 375,
-            width: '100%',
+            height: h('40'),
+            width: w('100'),
             // backgroundColor: 'red',
-            // borderTopLeftRadius: 15,
-            // borderTopRightRadius: 15,
-            // overflow :'hidden',
         }}
         >
 <Text
@@ -113,16 +106,16 @@ style={{
 >Chinese Side</Text>
 <View
 style={{
-    height: 25,
-    width: '100%',
+    height: h('5'),
+    width: w('100'),
     // backgroundColor: 'green',
     flexDirection: 'row',
     alignItems: 'center',
 }}
 ><View
 style={{
-    height: 25,
-    width: '25%',
+    height: h('5'),
+    width: w('25'),
     // backgroundColor: 'red',
     flexDirection: 'row',
     alignItems: 'center',
@@ -178,8 +171,8 @@ style={{
 </View>
 <View
 style={{
-    height: 36,
-    width: '100%',
+    height: h('5'),
+    width: w('100'),
     // backgroundColor: 'red',
     flexDirection:'row',
     justifyContent: 'space-between',
@@ -188,7 +181,7 @@ style={{
 >
 <View
 style={{
-    height: 20,
+    height: h('5'),
     width: w('27'),
     // backgroundColor: 'red',
     flexDirection :'row',
@@ -205,7 +198,7 @@ style={{
 </View>
 <View
 style={{
-    height: 20,
+    height: h('5'),
     width: w('35'),
     // backgroundColor: 'orange',
     flexDirection :'row',
@@ -222,11 +215,10 @@ style={{
 </View>
 <View
 style={{
-    height: 20,
+    height: h('5'),
     width: w('30'),
     // backgroundColor: 'green',
     flexDirection :'row',
-    // marginLeft: 25,
     alignItems: 'center',
     justifyContent: 'center',
 }}
@@ -258,8 +250,8 @@ style={{
             </View>
             <View
             style={{
-                height: h('12'),
-                width: '100%',
+                height: h('11'),
+                width: w('100'),
                 backgroundColor: 'grey',
                 flexDirection :'row',
                 alignItems: 'center',
@@ -271,7 +263,7 @@ style={{
             >
 <View
 style={{
-height: '60%',
+height: h('7'),
 width: w('38'),
 backgroundColor: 'white',
 elevation: 5,
@@ -286,9 +278,9 @@ flexDirection: 'row',
 <TouchableOpacity
 onPress={()=>{setcount(count-1)}}
 style={{
-    height: 100,
-    width: 50,
-    // backgroundColor: 'green',
+    height: h('100'),
+    width: w('12'),
+    //  backgroundColor: 'green',
     alignItems: 'center',
     justifyContent: 'center',
 }}
@@ -299,8 +291,8 @@ style={{
 {/* view two */}
 <View
 style={{
-    height: 100,
-    width: 50,
+    height: h('100'),
+    width: w('12'),
     // backgroundColor: 'red',
     alignItems: 'center',
     justifyContent: 'center',
@@ -318,8 +310,8 @@ style={{
 <TouchableOpacity
 onPress={()=>{setcount(count+1)}}
 style={{
-    height: 100,
-    width: w('13'),
+    height: h('100'),
+    width: w('12'),
     //  backgroundColor: 'blue',
     alignItems: 'center',
     justifyContent: 'center',
@@ -332,7 +324,7 @@ style={{
 {/* Add cart view */}
 <TouchableOpacity
 style={{
-height: '65%',
+height: h('7'),
 width: w('50'),
 backgroundColor: 'green',
 elevation: 5,

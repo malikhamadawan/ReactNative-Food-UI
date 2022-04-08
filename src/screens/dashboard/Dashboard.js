@@ -28,7 +28,6 @@ style={{
     height: h('10'),
     width : w('80'),
     // backgroundColor :'orange',
-    flexDirection: 'column',
 }}
 >
 <View
@@ -95,8 +94,6 @@ style={{
 style={{
     height: h('35'),
     //  backgroundColor: 'red',
-    // alignItems: 'center',
-    // justifyContent: 'center',
 }}
 >
     <ScrollView
@@ -216,8 +213,8 @@ style={{
 >
 <View
 style={{
-    height: 20,
-    width: 70,
+    height: h('3'),
+    width: w('20'),
     // backgroundColor: 'orange',
     flexDirection :'row',
     justifyContent: 'space-evenly',
@@ -232,8 +229,8 @@ style={{
 </View>
 <View
 style={{
-    height: 20,
-    width: 70,
+    height: h('3'),
+    width: w('20'),
     // backgroundColor: 'orange',
     flexDirection :'row',
     justifyContent: 'space-evenly',
@@ -248,8 +245,8 @@ style={{
 </View>
 <View
 style={{
-    height: 20,
-    width: 70,
+    height: h('3'),
+    width: w('20'),
     // backgroundColor: 'orange',
     flexDirection :'row',
     justifyContent: 'space-evenly',
@@ -275,7 +272,7 @@ style={{
     style={{
         height: '85%',
         width : 300,
-        // backgroundColor: 'blue',
+    // backgroundColor: 'blue',
         marginHorizontal: 45,
         alignItems: 'center',
         justifyContent: 'flex-end',
@@ -351,8 +348,8 @@ style={{
 >
 <View
 style={{
-    height: 20,
-    width: 70,
+    height: h('3'),
+    width: w('20'),
     // backgroundColor: 'orange',
     flexDirection :'row',
     justifyContent: 'space-evenly',
@@ -367,8 +364,8 @@ style={{
 </View>
 <View
 style={{
-    height: 20,
-    width: 70,
+    height: h('3'),
+    width: w('20'),
     // backgroundColor: 'orange',
     flexDirection :'row',
     justifyContent: 'space-evenly',
@@ -383,8 +380,8 @@ style={{
 </View>
 <View
 style={{
-    height: 20,
-    width: 70,
+    height: h('3'),
+    width: w('20'),
     // backgroundColor: 'orange',
     flexDirection :'row',
     justifyContent: 'space-evenly',
@@ -579,7 +576,7 @@ marginTop: 10,
 {/* vertical ScrollView */}
 <View
 style={{
-    height: '44%',
+    height: h('35'),
     // backgroundColor: 'blue',
 }}
 >
@@ -590,8 +587,8 @@ onPress={()=>{
     navigation.navigate('Cart')
 }}
 style={{
-    height: 190,
-    width: '100%',
+    height: h('24'),
+    width: w('100'),
     // backgroundColor: 'red',
      flexDirection: 'row',
     justifyContent: 'center',
@@ -600,11 +597,10 @@ style={{
 >
 <View
 style={{
-    height: '75%',
-    width: 130,
-    // backgroundColor: 'orange',
+    height: h('16'),
+    width: w('32'),
+     backgroundColor: 'orange',
     borderRadius: 25,
-    // marginHorizontal: 11,
     alignItems: 'center',
     justifyContent:'center',
     overflow: 'hidden',
@@ -717,9 +713,9 @@ style={{
 {/* second */}
 <View
 style={{
-    height: 190,
-    width: '100%',
-    // backgroundColor: 'red',
+    height: h('24'),
+    width: w('100'),
+    //  backgroundColor: 'red',
      flexDirection: 'row',
     justifyContent: 'center',
      alignItems: 'center',
@@ -727,8 +723,8 @@ style={{
 >
 <View
 style={{
-    height: '70%',
-    width: 130,
+    height: h('16'),
+    width: w('32'),
     backgroundColor: 'orange',
     borderRadius: 25,
     // marginHorizontal: 11,
@@ -844,8 +840,8 @@ style={{
 {/* third */}
 <View
 style={{
-    height: 180,
-    width: '100%',
+    height: h('24'),
+    width: w('100'),
     // backgroundColor: 'red',
      flexDirection: 'row',
     justifyContent: 'center',
@@ -854,8 +850,8 @@ style={{
 >
 <View
 style={{
-    height: '75%',
-    width: 130,
+    height: h('16'),
+    width: w('32'),
     //  backgroundColor: 'orange',
     borderRadius: 25,
     alignItems: 'center',
