@@ -587,8 +587,7 @@ onPress={()=>{
     navigation.navigate('Cart')
 }}
 style={{
-    height: h('24'),
-    width: w('100'),
+    height: h('25'),
     // backgroundColor: 'red',
      flexDirection: 'row',
     justifyContent: 'center',
@@ -597,10 +596,11 @@ style={{
 >
 <View
 style={{
-    height: h('16'),
-    width: w('32'),
-     backgroundColor: 'orange',
+    height: h('18'),
+    width: w('33'),
+    //  backgroundColor: 'orange',
     borderRadius: 25,
+    // marginHorizontal: 11,
     alignItems: 'center',
     justifyContent:'center',
     overflow: 'hidden',
@@ -617,8 +617,134 @@ style={{
 </View>
 <View
         style={{
-            height: '55%',
-            width: 210,
+            height: h('15'),
+            width: w('60'),
+            backgroundColor: 'white',
+            borderRadius: 15,
+            elevation: 5,
+            overflow :'hidden',
+        }}
+        >
+<Text
+style={{
+    fontSize: 16,
+    color: 'black',
+    margin: 10,
+}}
+>Nutritious fruit meal i...</Text>
+<View
+style={{
+    height: 25,
+    width: '100%',
+    // backgroundColor: 'green',
+    // alignItems: 'center',
+}}
+>
+<Text
+style={{
+    marginLeft: 3,
+    color: 'grey'
+}}
+>With chinese characteristics</Text>
+</View>
+<View
+style={{
+    height: h('6'),
+    width: w('60'),
+    // backgroundColor: 'red',
+    flexDirection:'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+}}
+>
+<View
+style={{
+    height: 20,
+    width: 70,
+    // backgroundColor: 'orange',
+    flexDirection :'row',
+    justifyContent: 'space-evenly',
+}}
+>
+<Icons name="ellipse-sharp" color='green' size={15} ></Icons>
+<Text
+style={{
+    color: 'black',
+}}
+>Normal</Text>
+</View>
+<View
+style={{
+    height: 20,
+    width: 70,
+    // backgroundColor: 'orange',
+    flexDirection :'row',
+    justifyContent: 'space-evenly',
+}}
+>
+<Icons name="md-location" color='green' size={15} ></Icons>
+<Text
+style={{
+    color: 'black',
+}}
+>1.7km</Text>
+</View>
+<View
+style={{
+    height: 20,
+    width: 70,
+    // backgroundColor: 'orange',
+    flexDirection :'row',
+    justifyContent: 'space-evenly',
+}}
+>
+<Icons name="time" color='green' size={15} ></Icons>
+<Text
+style={{
+    color: 'black',
+}}
+>32min</Text>
+</View>
+</View>
+
+        </View>
+</TouchableOpacity>
+
+{/* second */}
+<TouchableOpacity
+style={{
+    height: h('25'),
+    // backgroundColor: 'red',
+     flexDirection: 'row',
+    justifyContent: 'center',
+     alignItems: 'center',
+}}
+>
+<View
+style={{
+    height: h('18'),
+    width: w('33'),
+    backgroundColor: 'orange',
+    borderRadius: 25,
+    // marginHorizontal: 11,
+    alignItems: 'center',
+    justifyContent:'center',
+    overflow: 'hidden',
+}}
+>
+<Image
+source={require('../../assets/image5.jpg')}
+resizeMode={'contain'}
+style={{
+    height: 150,
+    width: 240,
+}}
+/>
+</View>
+<View
+        style={{
+            height: h('15'),
+            width: w('60'),
             backgroundColor: 'white',
             borderRadius: 15,
             elevation: 5,
@@ -710,138 +836,10 @@ style={{
         </View>
 </TouchableOpacity>
 
-{/* second */}
-<View
-style={{
-    height: h('24'),
-    width: w('100'),
-    //  backgroundColor: 'red',
-     flexDirection: 'row',
-    justifyContent: 'center',
-     alignItems: 'center',
-}}
->
-<View
-style={{
-    height: h('16'),
-    width: w('32'),
-    backgroundColor: 'orange',
-    borderRadius: 25,
-    // marginHorizontal: 11,
-    alignItems: 'center',
-    justifyContent:'center',
-    overflow: 'hidden',
-}}
->
-<Image
-source={require('../../assets/image5.jpg')}
-resizeMode={'contain'}
-style={{
-    height: 150,
-    width: 240,
-}}
-/>
-</View>
-<View
-        style={{
-            height: '55%',
-            width: 210,
-            backgroundColor: 'white',
-            borderRadius: 15,
-            elevation: 5,
-            overflow :'hidden',
-        }}
-        >
-<Text
-style={{
-    fontSize: 16,
-    color: 'black',
-    margin: 10,
-}}
->Nutritious fruit meal i...</Text>
-<View
-style={{
-    height: 25,
-    width: '100%',
-    // backgroundColor: 'green',
-    // alignItems: 'center',
-}}
->
-<Text
-style={{
-    marginLeft: 3,
-    color: 'grey'
-}}
->With chinese characteristics</Text>
-</View>
-<View
-style={{
-    height: 36,
-    width: '100%',
-    // backgroundColor: 'red',
-    flexDirection:'row',
-    justifyContent: 'space-evenly',
-    alignItems: 'center',
-}}
->
-<View
-style={{
-    height: 20,
-    width: 70,
-    // backgroundColor: 'orange',
-    flexDirection :'row',
-    justifyContent: 'space-evenly',
-}}
->
-<Icons name="ellipse-sharp" color='green' size={15} ></Icons>
-<Text
-style={{
-    color: 'black',
-}}
->Normal</Text>
-</View>
-<View
-style={{
-    height: 20,
-    width: 70,
-    // backgroundColor: 'orange',
-    flexDirection :'row',
-    justifyContent: 'space-evenly',
-}}
->
-<Icons name="md-location" color='green' size={15} ></Icons>
-<Text
-style={{
-    color: 'black',
-}}
->1.7km</Text>
-</View>
-<View
-style={{
-    height: 20,
-    width: 70,
-    // backgroundColor: 'orange',
-    flexDirection :'row',
-    justifyContent: 'space-evenly',
-}}
->
-<Icons name="time" color='green' size={15} ></Icons>
-<Text
-style={{
-    color: 'black',
-}}
->32min</Text>
-</View>
-</View>
-
-        </View>
-</View>
-
 {/* third */}
-<View
+<TouchableOpacity
 style={{
-    height: h('24'),
-    width: w('100'),
+    height: h('25'),
     // backgroundColor: 'red',
      flexDirection: 'row',
     justifyContent: 'center',
@@ -850,8 +848,8 @@ style={{
 >
 <View
 style={{
-    height: h('16'),
-    width: w('32'),
+    height: h('18'),
+    width: w('33'),
     //  backgroundColor: 'orange',
     borderRadius: 25,
     alignItems: 'center',
@@ -870,8 +868,8 @@ style={{
 </View>
 <View
         style={{
-            height: '55%',
-            width: 210,
+            height: h('15'),
+            width: w('60'),
             backgroundColor: 'white',
             borderRadius: 15,
             elevation: 5,
@@ -961,8 +959,133 @@ style={{
 </View>
 
         </View>
+</TouchableOpacity>
+
+{/* Four */}
+
+<TouchableOpacity
+style={{
+    height: h('25'),
+    // backgroundColor: 'red',
+     flexDirection: 'row',
+    justifyContent: 'center',
+     alignItems: 'center',
+}}
+>
+<View
+style={{
+    height: h('18'),
+    width: w('33'),
+    //  backgroundColor: 'orange',
+    borderRadius: 25,
+    alignItems: 'center',
+    justifyContent:'center',
+    overflow: 'hidden',
+}}
+>
+<Image
+source={require('../../assets/image6.jpg')}
+resizeMode={'contain'}
+style={{
+    height: 150,
+    width: 210,
+}}
+/>
+</View>
+<View
+        style={{
+            height: h('15'),
+            width: w('60'),
+            backgroundColor: 'white',
+            borderRadius: 15,
+            elevation: 5,
+            overflow :'hidden',
+        }}
+        >
+<Text
+style={{
+    fontSize: 16,
+    color: 'black',
+    margin: 10,
+}}
+>Nutritious fruit meal i...</Text>
+<View
+style={{
+    height: 25,
+    width: '100%',
+    // backgroundColor: 'green',
+    // alignItems: 'center',
+}}
+>
+<Text
+style={{
+    marginLeft: 3,
+    color: 'grey'
+}}
+>With chinese characteristics</Text>
+</View>
+<View
+style={{
+    height: 36,
+    width: '100%',
+    // backgroundColor: 'red',
+    flexDirection:'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+}}
+>
+<View
+style={{
+    height: 20,
+    width: 70,
+    // backgroundColor: 'orange',
+    flexDirection :'row',
+    justifyContent: 'space-evenly',
+}}
+>
+<Icons name="ellipse-sharp" color='green' size={15} ></Icons>
+<Text
+style={{
+    color: 'black',
+}}
+>Normal</Text>
+</View>
+<View
+style={{
+    height: 20,
+    width: 70,
+    // backgroundColor: 'orange',
+    flexDirection :'row',
+    justifyContent: 'space-evenly',
+}}
+>
+<Icons name="md-location" color='green' size={15} ></Icons>
+<Text
+style={{
+    color: 'black',
+}}
+>1.7km</Text>
+</View>
+<View
+style={{
+    height: 20,
+    width: 70,
+    // backgroundColor: 'orange',
+    flexDirection :'row',
+    justifyContent: 'space-evenly',
+}}
+>
+<Icons name="time" color='green' size={15} ></Icons>
+<Text
+style={{
+    color: 'black',
+}}
+>32min</Text>
+</View>
 </View>
 
+        </View>
+</TouchableOpacity>
 
 </ScrollView>
 </View>

@@ -15,6 +15,10 @@ useEffect(()=>{
         <View style={styles.container1}>
 <Image
 source={require('../../assets/images.png')}
+style={{
+    height: 200,
+    width: 200,
+}}
 />
 <Text
 style={{
