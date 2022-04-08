@@ -250,7 +250,7 @@ style={{
             </View>
             <View
             style={{
-                height: h('11'),
+                height: h('12'),
                 width: w('100'),
                 backgroundColor: 'grey',
                 flexDirection :'row',
