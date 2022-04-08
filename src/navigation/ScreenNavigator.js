@@ -5,18 +5,16 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SignIn from '../screens/signIn/SignIn';
 import SignUp from '../screens/signUp/SignUp';
 import { Splash } from '../screens/splash/Splash';
-import { Dashboard } from '../screens/dashboard/Dashboard';
+import MyTabs from './MyTabs';
+import Cart  from '../screens/dashboard/Cart';
 const Stack = createNativeStackNavigator();
 
  const ScreenNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen
-          name="Dashboard"
-          component={Dashboard}
-          options={{headerShown: false}}
-        />
+
+     
       <Stack.Screen
           name="Splash"
           component={Splash}
@@ -32,7 +30,16 @@ const Stack = createNativeStackNavigator();
           component={SignUp}
           options={{headerShown: false}}
         />
-        
+         <Stack.Screen
+          name="MyTabs"
+          component={MyTabs}
+          options={{headerShown: false}}
+        />
+              <Stack.Screen
+          name="Cart"
+          component={Cart}
+          options={{headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

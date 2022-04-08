@@ -6,7 +6,7 @@ import {
   heightPercentageToDP as h,
 } from 'react-native-responsive-screen';
 import styles  from './styles';
-const SignUp =()=> {
+const SignUp =({navigation})=> {
   
     return (
       <View style={styles.mainConatiner}>
@@ -17,8 +17,8 @@ const SignUp =()=> {
             source={require('../../assets/images.png')}
             resizeMode="contain"
             style={{
-                height: 200,
-                width: 200,
+                height: 250,
+                width: 250,
             }}
           />
         </View>
@@ -147,12 +147,6 @@ const SignUp =()=> {
           </View>
 
         </View>
-        {/* <View
-        style={{
-            height: h('5'),
-            backgroundColor :'red',
-        }}
-        /> */}
 <View
 style={{
     height: h('18'),
@@ -162,6 +156,9 @@ style={{
 }}
 >
 <TouchableOpacity
+onPress={()=>{
+  navigation.navigate('MyTabs')
+}}
 style={{
     height: 40,
     width: '40%',

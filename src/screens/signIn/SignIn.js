@@ -119,6 +119,9 @@ style={{
 }}
 >
 <TouchableOpacity
+onPress={()=>{
+  navigation.navigate('SignUp')
+}}
 style={{
     height: 40,
     width: '40%',
