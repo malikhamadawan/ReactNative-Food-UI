@@ -16,8 +16,8 @@ useEffect(()=>{
 <Image
 source={require('../../assets/images.png')}
 style={{
-    height: 200,
-    width: 200,
+    height: 300,
+    width: 300,
 }}
 />
 <Text
